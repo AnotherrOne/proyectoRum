@@ -1,0 +1,73 @@
+html, body {
+    height: 100%;
+  }
+  
+  body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-image: url("https://img.freepik.com/foto-gratis/efecto-movimiento-burbujas-pintura-acrilica_23-2148315517.jpg?t=st=1712879599~exp=1712883199~hmac=60a9c7f687baee97669f6d935d0a79c7968b5ffecb2492bbab6339d4f5291eba&w=1380") ;
+      background-attachment: fixed;
+      background-size: cover;
+      color: white;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  body h1{
+    color: white;
+  }
+  footer{
+    background-color: #333;
+    margin-top: auto;
+  }
+  /*Creacion de navBar*/
+  ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+  /*Hover para el navBar */
+  ul, li, li a{
+    opacity: 0.5;
+  }
+  ul, li, li a:hover{
+    opacity: 1.0;
+  }
+  /*Logo de navBar*/
+  .logo{
+    width: 65px;
+    height: 55px;
+  }
+  .LogoCompleto{
+    display: block;
+    margin-left: auto;
+    margin-right: none;
+    height: 150px;
+    width: 20%;
+    padding-top: 1%;
+  }
+  /*Tamaño de imagenes de carrusel*/
+  .slide1, .slide2, .slide3{
+      padding-top: 5%;
+      width: 800px;
+      height: 600px;
+  
+  }
+   
+  /*Imagen centrada del carrusel */
+  .carousel-inner{
+    padding-left: 29%;
+  }

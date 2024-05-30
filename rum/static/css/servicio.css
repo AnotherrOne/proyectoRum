@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-image: url("https://img.freepik.com/foto-gratis/efecto-movimiento-burbujas-pintura-acrilica_23-2148315517.jpg?t=st=1712879599~exp=1712883199~hmac=60a9c7f687baee97669f6d935d0a79c7968b5ffecb2492bbab6339d4f5291eba&w=1380") ;
+      background-attachment: fixed;
+      background-size: cover;
+      color: white;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  footer{
+    background-color:#333;
+    margin-top: auto;
+  }
+  .LogoCompleto{
+    display: block;
+    margin-left: auto;
+    margin-right: none;
+    height: 150px;
+    width: 20%;
+    padding-top: 1%;
+  }
+  /*Creacion de navBar*/
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  /*Hover para el navBar */
+  ul, li, li a{
+  opacity: 0.5;
+  }
+  ul, li, li a:hover{
+  opacity: 1.0;
+  }
+  /*Logo de navBar*/
+  .logo{
+  width: 65px;
+  height: 55px;
+  }
+  .container{
+    background-image: url("https://img.freepik.com/foto-gratis/efecto-movimiento-burbujas-pintura-acrilica_23-2148315517.jpg?t=st=1712879599~exp=1712883199~hmac=60a9c7f687baee97669f6d935d0a79c7968b5ffecb2492bbab6339d4f5291eba&w=1380") ;
+      background-attachment: fixed;
+      background-size: cover;
+      color: white;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .container nav{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    margin-bottom: 30px;
+    color: black;
+  }
+  .nav-card{
+    display: none;
+  }
+  .container nav button{
+    display: none;
+  }
+  .nav-card li{
+    list-style: none;
+    padding: 1rem;
+    font-weight: bolder;
+  }
+  .container nav i:hover > .buy-card{
+    width: 480px;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    background-color: white;
+  
+  }
+  .container nav i:hover .nav-card{
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px 0 10px;
+    border-bottom: solid thin white;
+  }
+  .container nav i:hover .buy-card > button{
+    display: block;
+    width: 90%;
+    padding: 1rem;
+    margin: 10px auto;
+    background-color: transparent;
+    border: solid thin black;
+    cursor: pointer;
+  ;
+  }
+  .container nav i{
+    font-size: 3rem;
+    cursor: pointer;
+  }
+  h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 3rem;
+  }
+  .grid{
+    display: grid;
+    max-width: 1100px;
+    justify-content: center;
+    margin: auto;
+    gap: 20px;
+    grid-template-columns: repeat(3,280px);
+    padding-bottom: 50px;
+  }
+  .items{
+    background-color: #bababa;
+    border: solid thin black;
+  }
+  .items img{
+    width: 100%;
+    height: 170px;
+  }
+  .info{
+    padding: 15px;
+  }
+  .info h3{
+    font-size: 1.6rem;
+  }
+  .info p{
+    font-size: 1.8rem;
+  }
+  .info h3, .info p{
+    color: black;
+    margin-bottom: 15px;
+  }
