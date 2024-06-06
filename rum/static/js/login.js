@@ -2,14 +2,11 @@ $(document).ready(function () {
     let nombre = $("#nombre");
     let email = $("#email");
     let pass1 = $("#pass1");
-    let pass2 = $("#pass2");
 
     $("#validar").click(function () {
-        console.log(nombre.val());
         console.log(email.val());
         console.log(pass1.val());
-        console.log(pass2.val());
-        if (validarDatos(nombre,pass1,pass2) && validarCorreo(email.val())) {
+        if (validarDatos(pass1) && validarCorreo(email.val())) {
             console.log("funciona")
         }else{
             console.log("no funciona")
@@ -17,27 +14,12 @@ $(document).ready(function () {
     
     })
     
-    function validarDatos(nombre, pass1, pass2) {
-
-        if (String(nombre).length >= 10) {
-            document.getElementById("nombre").style.border = "1px solid green"
-        }
-        else {
-            document.getElementById("nombre").style.border = "1px solid red"
-            return false;
-        }
+    function validarDatos(pass1) {
 
         if (String(pass1).length >= 8) {
             document.getElementById("pass1").style.border = "1px solid green"
         } else {
             document.getElementById("pass1").style.border = "1px solid red"
-            return false;
-        }
-        if (String(pass2) === String(pass1)) {
-            document.getElementById("pass2").style.border = "1px solid green"
-        }
-        else {
-            document.getElementById("pass2").style.border = "1px solid red"
             return false;
         }
         return true;
@@ -58,7 +40,7 @@ $(document).ready(function () {
 
     }
 
-    $("#reg").click(function () {
+    $("#ing").click(function () {
         location.href = "http://127.0.0.1:3000/index.html";
 
     })

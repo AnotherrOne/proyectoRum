@@ -19,3 +19,6 @@ def clientes(request):
 def login(request):
     context ={}
     return render(request, "pages/login.html",context)
+def registro(request):
+    context={}
+    return render(request, "pages/registro.html",context)
