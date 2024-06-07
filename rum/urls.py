@@ -1,5 +1,5 @@
 from proyectorum.urls import path
-from . import views
+from rum import views
 
 urlpatterns = [
     path("",views.index,name='index'),

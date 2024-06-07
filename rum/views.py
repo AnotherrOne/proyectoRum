@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Tier, Usuario
 
 # Create your views here.
 def index(request):
