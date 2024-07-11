@@ -3,7 +3,7 @@ from .models import Tier, Usuario
 from django.contrib.auth.decorators import login_required
 
 
-@login_required
+
 # Create your views here.
 def index(request):
     context ={}
